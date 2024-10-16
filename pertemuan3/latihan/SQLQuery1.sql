@@ -80,7 +80,7 @@ WHERE
         FROM 
             Sales.Orders o
         WHERE 
-            o.orderdate >= '2016-05-01'   
+            o.orderdate >= '2016-05-01'
 
     );
 
