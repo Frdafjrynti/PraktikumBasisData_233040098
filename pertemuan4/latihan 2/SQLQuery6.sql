@@ -1,7 +1,7 @@
 use pertemuan_4
 
-select * from dpp_mahasiswa
+select * from jadwal_mata_kuliah
 
-select top(5) jumlah_pembayaran
-from dpp_mahasiswa
-order by jumlah_pembayaran desc
+select count(*)
+from jadwal_mata_kuliah
+where hari = 'senin'

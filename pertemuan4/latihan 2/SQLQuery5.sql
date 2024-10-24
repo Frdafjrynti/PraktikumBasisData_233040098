@@ -1,5 +1,6 @@
+use pertemuan_4
 
+select * from jadwal mahasiswa
 
-select count(*) as jumlah_total_mahasiswa
-from mahasiswa
-where jurusan = 'teknik informatika'
+select distinct dosen_pengajar
+from jadwal_mata_kuliah

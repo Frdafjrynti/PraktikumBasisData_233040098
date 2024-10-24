@@ -1,8 +1,11 @@
 use pertemuan_4
+select * from dpp_mahasiswa
 
-select * from mahasiswa
+SELECT nama_mahasiswa 
+FROM mahasiswa 
+WHERE mahasiswa_id   IN (
 
-select nama_mahasiswa
-from mahasiswa
-where jurusan = 'teknik informatika' and alamat like (%jl.sudirman)
-and (tahun_masuk between 2018 and 2020) 
+SELECT mahasiswa_id  
+FROM dpp_mahasiswa
+WHERE status_pembayaran = 'Lunas'
+);
